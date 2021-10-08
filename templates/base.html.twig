@@ -9,12 +9,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {# TODO: Dynamiser le nom du site #}
     <title> {% block title %}  {% endblock %} - Le Blog de Batman </title>
+
     {# Inclusion Font-Awesome #}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
     {# Inclusion CSS Bootstrap #}
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+
     {# Inclusion Styles perso #}
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
     {# Bloc pour ajouter des fichiers css additionnels #}
     {% block css %}{% endblock %}
 
@@ -67,7 +71,6 @@
 
     {# Bloc pour affichier le contenu des pages #}
     {% block body %}  {% endblock %}
-
 
 
 
